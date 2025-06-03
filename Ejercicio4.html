@@ -1,0 +1,21 @@
+<script>
+  var text = prompt("Escribe una frase"); // pedir frase y guardarla en la variable texto
+  var nText = text.length; // guardar la longitud del texto ingresado
+  var cont; // contador
+  var a=0,e=0,i=0,o=0,u=0; // iniciar contador de cada vocal en cero 
+  for (cont = 0; cont < nText; cont++) { //Recorre cada carácter de la frase
+	// para cada carácter, si es una vocal, aumenta el contador correspondiente.
+    if (text.substr(cont,1) === "a"){a++;};  
+    if (text.substr(cont,1) === "e"){e++;}; 
+    if (text.substr(cont,1) === "i"){i++;}; 
+    if (text.substr(cont,1) === "o"){o++;};
+    if (text.substr(cont,1) === "u"){u++;};
+  }
+  //Muestra cuántas veces aparece cada vocal, una por una.
+  document.write("La vocal (a) aparece " + a + " veces<br>");
+  document.write("La vocal (e) aparece " + e + " veces<br>");
+  document.write("La vocal (i) aparece " + i + " veces<br>");
+  document.write("La vocal (o) aparece " + o + " veces<br>");
+  document.write("La vocal (u) aparece " + u + " veces<br>");
+</script>
+

@@ -1,0 +1,19 @@
+<script>
+    var n1 = prompt("Escribe un número"); // pedir primer numero
+    var n2 = prompt("Escribe otro número"); // pedir segundo numero
+
+	//convertir a entero
+    n1 = parseInt(n1); 
+    n2 = parseInt(n2);
+
+    if (!isNaN(n1) && !isNaN(n2)) { // verificar que sean numeros validos.
+		//comparar valores y guardar el mayo
+        var mayor = (n1 >= n2) ? n1 : n2;
+		//imprimir en pantalla el mayor
+        document.write("El número mayor es: " + mayor);
+    } else {
+        document.write("Por favor, ingresa números válidos.");
+    }
+</script>
+
+

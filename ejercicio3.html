@@ -1,0 +1,16 @@
+<script>
+  var texto = prompt("Escribe una frase"); // pedir frase y guardarla en la variable textoo
+  var ntexto = texto.length; // guardar la longitud del texto ingresado
+  var i;
+  var lista = []; // arreglo para guardar las vocales
+  //cliclo
+  for (i = 0; i < ntexto; i++) {
+	//verificar si el caracter en la posicion i es vocal
+    if (texto.substr(i,1) === "a" || texto.substr(i,1) === "e" || texto.substr(i,1) === "i" || texto.substr(i,1) === "o" || texto.substr(i,1) === "u") {
+	//Si es una vocal, la agrega al arreglo
+      lista.push(texto.substr(i,1));
+    }
+  }
+  document.write("se encontraron las siguientes vocales: (" + lista + ")");
+</script>
+
